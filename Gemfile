@@ -48,7 +48,7 @@ gem 'httparty'
 gem 'flowdock'
 
 gem 'ri_cal'
-gem 'yajl-ruby', platform: 'ruby'
+gem 'yajl-ruby', '>= 1.4.2', platform: 'ruby'
 gem 'json', platform: 'jruby'
 
 group :development, :test do
