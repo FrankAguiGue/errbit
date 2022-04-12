@@ -4,13 +4,13 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 4.2.11.1', RAILS_VERSION
+gem 'actionpack', '>= 4.2.11.1', RAILS_VERSION
+gem 'railties', '>= 4.2.11.1', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'dotenv-rails'
 gem 'draper'
 gem 'errbit_plugin'
