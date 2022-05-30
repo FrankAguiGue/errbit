@@ -4,18 +4,18 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 5.0.0', RAILS_VERSION
+gem 'actionpack', '>= 5.0.0', RAILS_VERSION
+gem 'railties', '>= 5.0.0', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'dotenv-rails'
 gem 'draper'
 gem 'errbit_plugin'
 gem 'errbit_github_plugin'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.5.0.1'
 gem 'haml', '~> 5.1'
 gem 'htmlentities'
 gem 'kaminari'
@@ -93,7 +93,7 @@ gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
-gem 'pjax_rails'
+gem 'pjax_rails', '>= 0.5.0'
 gem 'underscore-rails'
 
 gem 'sucker_punch'
