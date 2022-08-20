@@ -21,8 +21,8 @@ gem 'htmlentities'
 gem 'kaminari'
 gem 'kaminari-mongoid'
 gem 'mongoid', '~> 5.4'
-gem 'omniauth'
-gem 'omniauth-github'
+gem 'omniauth', '>= 2.0.0'
+gem 'omniauth-github', '>= 2.0.0'
 gem 'omniauth-google-oauth2'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
