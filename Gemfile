@@ -4,13 +4,13 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 4.2.11.1', RAILS_VERSION
+gem 'actionpack', '>= 4.2.11.1', RAILS_VERSION
+gem 'railties', '>= 4.2.11.1', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
+gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'dotenv-rails'
 gem 'draper'
 gem 'errbit_plugin'
@@ -21,8 +21,8 @@ gem 'htmlentities'
 gem 'kaminari'
 gem 'kaminari-mongoid'
 gem 'mongoid', '~> 5.4'
-gem 'omniauth'
-gem 'omniauth-github'
+gem 'omniauth', '>= 2.1.0'
+gem 'omniauth-github', '>= 2.0.0'
 gem 'omniauth-google-oauth2'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
