@@ -43,7 +43,7 @@ gem 'hoi'
 # Pushover (iOS Push notifications)
 gem 'rushover'
 # Hubot
-gem 'httparty'
+gem 'httparty', '>= 0.21.0'
 # Flowdock
 gem 'flowdock'
 
