@@ -4,23 +4,23 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 6.1.7.1', RAILS_VERSION
+gem 'actionpack', '>= 6.1.7.1', RAILS_VERSION
+gem 'railties', '>= 6.1.7.1', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
-gem 'dotenv-rails'
+gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'dotenv-rails', '>= 2.7.6'
 gem 'draper'
 gem 'errbit_plugin'
 gem 'errbit_github_plugin'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.6'
 gem 'haml', '~> 5.1'
 gem 'htmlentities'
 gem 'kaminari'
 gem 'kaminari-mongoid'
-gem 'mongoid', '~> 5.4'
+gem 'mongoid', '~> 7.0', '>= 7.0.12'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
@@ -31,7 +31,7 @@ gem 'useragent'
 
 # Please don't update hoptoad_notifier to airbrake.
 # It's for internal use only, and we monkeypatch certain methods
-gem 'hoptoad_notifier', "~> 2.4"
+gem 'hoptoad_notifier', '~> 2.4', '>= 2.4.11'
 
 # Notification services
 # ---------------------------------------
@@ -62,7 +62,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', platform: 'ruby'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.0'
 end
 
 group :test do
@@ -70,7 +70,7 @@ group :test do
   gem 'rspec'
   gem 'rspec-rails', require: false
   gem 'rspec-activemodel-mocks'
-  gem 'mongoid-rspec', require: false
+  gem 'mongoid-rspec', '>= 4.0.0', require: false
   gem 'fabrication'
   gem 'capybara'
   gem 'poltergeist'
@@ -90,10 +90,10 @@ group :no_docker, :test, :development do
 end
 
 gem 'puma'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 gem 'uglifier'
 gem 'jquery-rails'
-gem 'pjax_rails'
+gem 'pjax_rails', '>= 0.5.0'
 gem 'underscore-rails'
 
 gem 'sucker_punch'
