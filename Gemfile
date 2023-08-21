@@ -89,7 +89,7 @@ group :no_docker, :test, :development do
   gem 'mini_racer', platform: :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
 end
 
-gem 'puma'
+gem 'puma', '>= 5.6.7'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
