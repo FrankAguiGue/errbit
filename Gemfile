@@ -4,21 +4,21 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 4.2.11.2', RAILS_VERSION
+gem 'actionpack', '>= 4.2.11.2', RAILS_VERSION
+gem 'railties', '>= 4.2.11.2', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
-gem 'dotenv-rails'
-gem 'draper'
+gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'dotenv-rails', '>= 2.6.0'
+gem 'draper', '>= 3.0.0'
 gem 'errbit_plugin'
 gem 'errbit_github_plugin'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.3.0.0'
 gem 'haml', '~> 5.1'
 gem 'htmlentities'
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.0'
 gem 'kaminari-mongoid'
 gem 'mongoid', '~> 5.4'
 gem 'omniauth'
@@ -62,17 +62,17 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', platform: 'ruby'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.0'
 end
 
 group :test do
   gem 'rake'
   gem 'rspec'
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.8.2', require: false
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
-  gem 'capybara'
+  gem 'capybara', '>= 3.13.0'
   gem 'poltergeist'
   gem 'phantomjs'
   gem 'launchy'
@@ -90,10 +90,10 @@ group :no_docker, :test, :development do
 end
 
 gem 'puma'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 gem 'uglifier'
-gem 'jquery-rails'
-gem 'pjax_rails'
+gem 'jquery-rails', '>= 4.3.4'
+gem 'pjax_rails', '>= 0.5.0'
 gem 'underscore-rails'
 
 gem 'sucker_punch'
