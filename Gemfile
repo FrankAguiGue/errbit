@@ -69,7 +69,7 @@ group :test do
   gem 'rake'
   gem 'rspec'
   gem 'rspec-rails', require: false
-  gem 'rspec-activemodel-mocks'
+  gem 'rspec-activemodel-mocks', '>= 1.2.0'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
   gem 'capybara'
