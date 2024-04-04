@@ -4,26 +4,26 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 7.0.8.1', RAILS_VERSION
+gem 'actionpack', '>= 7.0.8.1', RAILS_VERSION
+gem 'railties', '>= 7.0.8.1', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
-gem 'dotenv-rails'
-gem 'draper'
+gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'dotenv-rails', '>= 2.7.6'
+gem 'draper', '>= 3.1.0'
 gem 'errbit_plugin'
 gem 'errbit_github_plugin'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.7.0.8'
 gem 'haml', '~> 5.1'
 gem 'htmlentities'
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.0'
 gem 'kaminari-mongoid'
 gem 'mongoid', '~> 5.4'
-gem 'omniauth'
-gem 'omniauth-github'
-gem 'omniauth-google-oauth2'
+gem 'omniauth', '>= 1.9.2'
+gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-google-oauth2', '>= 0.8.0'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
 gem 'rinku'
@@ -60,19 +60,19 @@ group :development, :test do
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.5.1'
   gem 'binding_of_caller', platform: 'ruby'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.4'
 end
 
 group :test do
   gem 'rake'
   gem 'rspec'
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.8.2', require: false
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
-  gem 'capybara'
+  gem 'capybara', '>= 3.13.0'
   gem 'poltergeist'
   gem 'phantomjs'
   gem 'launchy'
@@ -90,10 +90,10 @@ group :no_docker, :test, :development do
 end
 
 gem 'puma'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 gem 'uglifier'
-gem 'jquery-rails'
-gem 'pjax_rails'
+gem 'jquery-rails', '>= 4.3.4'
+gem 'pjax_rails', '>= 0.5.0'
 gem 'underscore-rails'
 
 gem 'sucker_punch'
