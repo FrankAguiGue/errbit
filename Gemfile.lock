@@ -205,8 +205,8 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     netrc (0.11.0)
-    nio4r (2.5.2)
-    nio4r (2.5.2-java)
+    nio4r (2.7.3)
+    nio4r (2.7.3-java)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -270,9 +270,9 @@ GEM
       pry (~> 0.10)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
-    puma (4.3.3)
+    puma (6.4.3)
       nio4r (~> 2.0)
-    puma (4.3.3-java)
+    puma (6.4.3-java)
       nio4r (~> 2.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
@@ -470,7 +470,7 @@ DEPENDENCIES
   poltergeist
   pry-byebug
   pry-rails
-  puma
+  puma (>= 5.6.9)
   quiet_assets
   rack-ssl
   rack-ssl-enforcer
