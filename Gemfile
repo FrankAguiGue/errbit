@@ -4,9 +4,9 @@ RAILS_VERSION = '~> 4.2.10'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
-gem 'actionmailer', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'actionmailer', '>= 6.1.7.9', RAILS_VERSION
+gem 'actionpack', '>= 6.1.7.9', RAILS_VERSION
+gem 'railties', '>= 6.1.7.9', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
@@ -90,7 +90,7 @@ group :no_docker, :test, :development do
 end
 
 gem 'puma'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'pjax_rails'
