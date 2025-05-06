@@ -68,7 +68,7 @@ end
 group :test do
   gem 'rake'
   gem 'rspec'
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 8.0.0', require: false
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
