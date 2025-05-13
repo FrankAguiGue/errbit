@@ -90,7 +90,7 @@ group :no_docker, :test, :development do
 end
 
 gem 'puma'
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'pjax_rails'
