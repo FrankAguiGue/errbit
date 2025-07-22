@@ -6,16 +6,16 @@ send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
 gem 'actionmailer', RAILS_VERSION
 gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'railties', '>= 4.2.11.2', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
-gem 'devise', '~> 4.7'
-gem 'dotenv-rails'
+gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'dotenv-rails', '>= 2.6.0'
 gem 'draper'
 gem 'errbit_plugin'
 gem 'errbit_github_plugin'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '>= 4.3.0.0'
 gem 'haml', '~> 5.1'
 gem 'htmlentities'
 gem 'kaminari'
@@ -62,13 +62,13 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', platform: 'ruby'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.7.0'
 end
 
 group :test do
   gem 'rake'
   gem 'rspec'
-  gem 'rspec-rails', require: false
+  gem 'rspec-rails', '>= 3.8.2', require: false
   gem 'rspec-activemodel-mocks'
   gem 'mongoid-rspec', require: false
   gem 'fabrication'
@@ -78,7 +78,7 @@ group :test do
   gem 'launchy'
   gem 'email_spec'
   gem 'timecop'
-  gem 'coveralls', require: false
+  gem 'coveralls', '>= 0.8.23', require: false
 end
 
 group :heroku, :production do
@@ -90,10 +90,10 @@ group :no_docker, :test, :development do
 end
 
 gem 'puma'
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 gem 'uglifier'
-gem 'jquery-rails'
-gem 'pjax_rails'
+gem 'jquery-rails', '>= 4.3.4'
+gem 'pjax_rails', '>= 0.5.0'
 gem 'underscore-rails'
 
 gem 'sucker_punch'
