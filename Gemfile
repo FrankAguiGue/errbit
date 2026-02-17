@@ -14,16 +14,16 @@ gem 'devise', '~> 4.7'
 gem 'dotenv-rails'
 gem 'draper'
 gem 'errbit_plugin'
-gem 'errbit_github_plugin'
+gem 'errbit_github_plugin', '>= 0.4.0'
 gem 'font-awesome-rails'
 gem 'haml', '~> 5.1'
 gem 'htmlentities'
 gem 'kaminari'
-gem 'kaminari-mongoid'
-gem 'mongoid', '~> 5.4'
+gem 'kaminari-mongoid', '>= 1.0.2'
+gem 'mongoid', '~> 7.6', '>= 7.6.1'
 gem 'omniauth'
-gem 'omniauth-github'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-github', '>= 2.0.0'
+gem 'omniauth-google-oauth2', '>= 0.8.0'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
 gem 'rack-ssl-enforcer', require: false
 gem 'rinku'
@@ -70,7 +70,7 @@ group :test do
   gem 'rspec'
   gem 'rspec-rails', require: false
   gem 'rspec-activemodel-mocks'
-  gem 'mongoid-rspec', require: false
+  gem 'mongoid-rspec', '>= 4.0.0', require: false
   gem 'fabrication'
   gem 'capybara'
   gem 'poltergeist'
